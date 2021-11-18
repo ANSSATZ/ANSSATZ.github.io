@@ -82,7 +82,7 @@
                     <span class="subtitle2">Teléfono</span>
                 </label>
                 <div class="text-input--focus-ring-container">
-                    <input id="edit-phone-number" name="phone-number" class="text-input--input" type="text" />
+                    <input id="edit-phone-number" name="phone_number" class="text-input--input" type="text" />
                 </div>
             </div>
             <div class="text-input gutter-bottom-input">
@@ -99,7 +99,7 @@
                 </label>
                 <div class="text-input--focus-ring-container">
                     <div class="text-input--select-container">
-                        <select id="edit-topic" name="topic" class="text-input--select">
+                        <select id="edit-topic" name="subject" class="text-input--select">
                             <option value="" selected="selected">- Selecciona -</option>
                             <option value="investment">Inversión</option>
                             <option value="collaboration">Colaboración</option>
@@ -148,13 +148,25 @@
                     <span class="subtitle2">Pregunta</span>
                 </label>
                 <div class="text-input--focus-ring-container">
-                    <textarea id="edit-comment" name="comment" cols="60" rows="5" class="text-input--input"></textarea>
+                    <textarea id="edit-comment" name="message" cols="60" rows="5" class="text-input--input"></textarea>
                 </div>
             </div>
             <p class="contact-disclaimer"><small>Al dar click en "Enviar", estoy de acuerdo en ser contactado a través de teléfono o email para conocer más sobre ANSSATZ.</small></p>
             <button type="submit" class="btn-primary">Enviar</button>
         </form>
     </section>
+    <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">      (function () {
+        emailjs.init("user_Ae7cLwSIHJ6vSP9tOmyJ1");
+        })();
+    </script>
+    <script>
+        // emailjs.sendForm("service_kams2b9", "template_tdmhlia", "#contact-form")
+    </script>
     <script src="./index.js"></script>
 </body>
 </html>

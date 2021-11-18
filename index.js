@@ -31,6 +31,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactForm !== null) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
+            emailjs.sendForm("service_kams2b9", "template_tdmhlia", "#contact-form")
+            .then(
+                (response) => {
+                  console.log("SUCCESS!", response.status, response.text);
+                  alert("SUCCESS!");
+                },
+                (error) => {
+                  console.log("FAILED...", error);
+                  alert("FAILED...", error);
+                }
+            );
         });
     }
 
