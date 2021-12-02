@@ -102,49 +102,47 @@
                     <span class="subtitle2">Tema</span>
                 </label>
                 <div class="text-input--focus-ring-container">
-                    <div class="text-input--select-container">
-                        <select id="edit-topic" name="subject" class="text-input--select">
-                            <option value="" selected="selected">- Selecciona -</option>
-                            <option value="investment">Inversión</option>
-                            <option value="collaboration">Colaboración</option>
-                            <option value="details">Informes</option>
-                            <option value="provider">Sé nuestro proveedor</option>
-                            <option value="sponsorships">Patrocinios</option>
-                        </select>
-                        <svg class="text-input--select-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
-                            <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                            <g>
-                            </g>
-                        </svg>
-                    </div>
+                    <select id="edit-topic" name="subject" class="text-input--select">
+                        <option value="" selected="selected">- Selecciona -</option>
+                        <option value="Inversión">Inversión</option>
+                        <option value="Colaboración">Colaboración</option>
+                        <option value="Informes">Informes</option>
+                        <option value="Proveedor">Sé nuestro proveedor</option>
+                        <option value="Patrocinios">Patrocinios</option>
+                    </select>
+                    <svg class="text-input--select-arrow" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 330 330" style="enable-background:new 0 0 330 330;" xml:space="preserve">
+                        <path id="XMLID_225_" d="M325.607,79.393c-5.857-5.857-15.355-5.858-21.213,0.001l-139.39,139.393L25.607,79.393  c-5.857-5.857-15.355-5.858-21.213,0.001c-5.858,5.858-5.858,15.355,0,21.213l150.004,150c2.813,2.813,6.628,4.393,10.606,4.393  s7.794-1.581,10.606-4.394l149.996-150C331.465,94.749,331.465,85.251,325.607,79.393z"/>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                        <g>
+                        </g>
+                    </svg>
                 </div>
             </div>
             <div class="text-input gutter-bottom-input">
@@ -159,18 +157,18 @@
             <button type="submit" class="btn-primary">Enviar</button>
         </form>
     </section>
+    <script src="./scripts/sweetalert2.all.min.js"></script>
+    <script type="text/javascript" src="./scripts/validator.min.js"></script>
     <script
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
     ></script>
-
-    <script type="text/javascript">      (function () {
-        emailjs.init("user_Ae7cLwSIHJ6vSP9tOmyJ1");
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_Ae7cLwSIHJ6vSP9tOmyJ1");
         })();
     </script>
-    <script>
-        // emailjs.sendForm("service_kams2b9", "template_tdmhlia", "#contact-form")
-    </script>
     <script src="./index.js"></script>
+    <script src="./scripts/contact.js"></script>
 </body>
 </html>

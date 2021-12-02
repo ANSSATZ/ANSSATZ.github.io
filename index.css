@@ -309,6 +309,11 @@ html {
     border-color: #d0d1d2;
 }
 
+.text-input--focus-ring--error {
+    opacity: 1;
+    border-color: #ef5350;
+}
+
 .text-input--select-container {
     position: relative;
 }
