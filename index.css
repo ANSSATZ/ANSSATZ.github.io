@@ -215,7 +215,7 @@ html {
     color: var(--palette-text-secondary);
     font-size: 4rem;
     font-family: 'SF UI Display Bold';
-    color: white;
+    color: black;
 }
 
 .text-input {
@@ -462,6 +462,8 @@ html {
     font-family: 'SF UI Display Light';
     font-size: 1.4rem;
     color: var(--palette-text-label);
+		text-align: justify;
+		text-justify: inter-word;
 }
 
 .navigation-menu-link {
