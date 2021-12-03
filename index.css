@@ -195,7 +195,7 @@ html {
 }
 
 .header-banner {
-    height: -webkit-fill-available;
+    height: 100vh;
     background: url(./images/mark1.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -220,7 +220,6 @@ html {
 
 .dimensions-banner {
 		height: 100vh;
-		max-height: -webkit-fill-available;
     background: url(./images/dimensions.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -244,7 +243,7 @@ html {
 }
 
 .specs-banner {
-    height: 720px;
+    height: 100vh;
     background: url(./images/specs.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
