@@ -218,6 +218,54 @@ html {
     color: black;
 }
 
+.dimensions-banner {
+    height: 100vh;
+    background: url(./images/dimensions.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.dimensions-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(16vh + 20px);
+}
+
+.dimensions-description h2 {
+    color: var(--palette-text-secondary);
+    font-size: 4rem;
+    font-family: 'SF UI Display Bold';
+    color: black;
+}
+
+.specs-banner {
+    height: 100vh;
+    background: url(./images/specs.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.specs-description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: calc(16vh + 20px);
+}
+
+.specs-description h2 {
+    color: var(--palette-text-secondary);
+    font-size: 4rem;
+    font-family: 'SF UI Display Bold';
+    color: black;
+}
+
 .text-input {
     width: 100%;
     display: flex;
