@@ -786,6 +786,10 @@ body {
     position: relative;
 }
 
+.main-navigation-link-alt {
+    color: white;
+}
+
 .main-navigation-link::after {
     position: absolute;
     top: calc(100% + 0.5rem);
@@ -796,6 +800,10 @@ body {
     height: 1px;
     width: 0;
     transition: width .3s ease-in-out;
+}
+
+.main-navigation-link-alt::after {
+    background-color: white;
 }
 
 .main-navigation > ul > li:hover > .main-navigation-link::after {
@@ -812,6 +820,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    position: relative;
 }
 
 .header-banner > picture {
@@ -819,7 +828,7 @@ body {
     width: 100%;
 }
 
-.header-banner > picture > img{
+.header-banner > picture > img {
     width: 100%;
     display: block; /* remove extra space below image */
     height: 100vh;
@@ -828,17 +837,29 @@ body {
 }
 
 .header-description {
-    width: 100%;
+    position: absolute;
+    height: 100%;
     display: flex;
+    color: white;
+    flex-direction: column;
     justify-content: center;
-    margin-top: calc(16vh + 20px);
+    padding-left: 2rem;
+}
+
+.header-description h1 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    line-height: 1.33;
+    letter-spacing: 1.62px;
+    margin-bottom: 10px;
 }
 
 .header-description h2 {
-    color: var(--palette-text-secondary);
-    font-size: 4rem;
     font-weight: 700;
-    color: black;
+    letter-spacing: -1.5px;
+    margin-left: -4px;
+    font-size: 4rem;
+    line-height: 1.08em;
 }
 
 .text-input {
@@ -1043,6 +1064,10 @@ body {
         position: relative;
         width: auto;
     }
+
+    .header-description {
+        margin-left: calc(100% / 12);
+    }
 }
 
 .founder-banner {
@@ -1147,11 +1172,23 @@ body {
     }
 }
 
-@media screen and (max-width: 767px) { /* 768 - 1 */
-    .header-description h2 {
-        font-size: 3.6rem;
+@media screen and (min-width: 1025px) {
+    .header-description {
+        padding-left: 0!important;
     }
 
+    .header-description h1 {
+        font-weight: 500;
+        font-size: 2.4rem;
+    }
+
+    .header-description h2 {
+        font-size: 8rem;
+        line-height: 1;
+    }
+}
+
+@media screen and (max-width: 767px) { /* 768 - 1 */
     .main-navigation {
         padding: 0.8rem 2rem;
     }
