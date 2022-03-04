@@ -759,10 +759,13 @@ body {
     padding-left: 5.2rem;
     padding-right: 5.2rem;
     z-index: 3;
-    position: fixed;
     width: 100%;
     height: 72px;
     background-color: white;
+}
+
+.main-navigation--absolute {
+    position: absolute;
 }
 
 .flex {
@@ -1040,7 +1043,7 @@ body {
 }
 
 .contact-header {
-    padding-top: calc(72px + 44px);
+    padding-top: 44px;
 }
 
 .contact-header h1 {
