@@ -1121,7 +1121,7 @@ body {
 }
 
 .body3 {
-    font-weight: 300;
+    font-weight: 200;
     font-size: 1rem;
     color: var(--palette-text-label);
     line-height: 1.43;
