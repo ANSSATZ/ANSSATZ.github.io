@@ -747,9 +747,12 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
+@font-face {
+  font-family: 'CustomFont'; /* Name your font family */
+  src: url('./font/sf-ui-display-light-58646b33e0551.otf'); /* Locate the .ttf file within your directory*/
+}
 body {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'CustomFont', Monserrat;
 }
 
 .main-navigation {
@@ -851,7 +854,7 @@ body {
 }
 
 .header-description h1 {
-    font-weight: 400;
+    font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.33;
     letter-spacing: 1.62px;
@@ -860,7 +863,7 @@ body {
 }
 
 .header-description h2 {
-    font-weight: 550;
+    font-weight: 600;
     letter-spacing: 1px;
     margin-left: -4px;
     font-size: 4rem;
@@ -1035,9 +1038,9 @@ body {
 }
 
 .subtitle1 {
-    font-weight: 400;
-    font-size: 1.6rem;
-    color: var(--palette-text-primary);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--palette-black);
     line-height: 1.6;
 }
 
@@ -1100,8 +1103,8 @@ body {
 }
 
 .founder-banner-description h3 {
-    font-weight: 400;
-    font-size: 1.6rem;
+    font-weight: 700;
+    font-size: 1.8rem;
     color: var(--palette-text-primary);
     line-height: 1.6rem;
     margin-bottom: .8rem;
@@ -1116,11 +1119,13 @@ body {
 }
 
 .body2 {
-    font-weight: 300;
-    font-size: 1.4rem;
-    color: var(--palette-text-label);
+    font-weight: 400;
+    font-size: 1.6rem;
+    color: var(--palette-black);
     line-height: 1.43;
     letter-spacing: 0.17136px;
+		text-align: justify;
+  	text-justify: inter-word;
 }
 
 .body3 {
@@ -1291,8 +1296,8 @@ body {
 }
 
 .h6 {
-    font-weight: 500;
-    font-size: 2rem;
+    font-weight: 600;
+    font-size: 3rem;
     color: var(--palette-text-label);
     line-height: 1.6;
     letter-spacing: 0.12px;
