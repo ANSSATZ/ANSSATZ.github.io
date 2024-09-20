@@ -734,6 +734,7 @@ table {
     --palette-text-label: #5c5e62;
     --palette-background-input: #f4f4f4;
     --palette-gray-dark: #171a20;
+		--palette-black: #000000;
 }
 
 html {
@@ -855,14 +856,16 @@ body {
     line-height: 1.33;
     letter-spacing: 1.62px;
     margin-bottom: 10px;
+		color: var(--palette-black);
 }
 
 .header-description h2 {
-    font-weight: 600;
+    font-weight: 550;
     letter-spacing: 1px;
     margin-left: -4px;
     font-size: 4rem;
     line-height: 1.08em;
+		color: var(--palette-black);
 }
 
 .iframe-container{
